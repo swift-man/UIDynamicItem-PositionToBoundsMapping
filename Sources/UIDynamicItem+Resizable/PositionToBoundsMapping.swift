@@ -14,11 +14,11 @@ public class PositionToBoundsMapping<UIDynamicItem> {
     self.target = target
   }
   
-  var bounds: CGRect {
+  public var bounds: CGRect {
     return target.bounds
   }
   
-  var center: CGPoint {
+  public var center: CGPoint {
     get {
       return CGPoint(x: target.bounds.width,
                      y: target.bounds.height)
@@ -30,7 +30,7 @@ public class PositionToBoundsMapping<UIDynamicItem> {
     }
   }
   
-  var transform: CGAffineTransform {
+  public var transform: CGAffineTransform {
     get {
       return target.transform
     }
